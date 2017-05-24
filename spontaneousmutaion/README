@@ -1,0 +1,4 @@
+This repo contains analysis and simulation scripts That I've written to help me perform phylogenomic analyses. All are written in Perl.
+
+The genome that I used them to deal with is a complete bacteria genome, which means it contains only one contig and no N or gaps. So please don't use them on other purpose.
+

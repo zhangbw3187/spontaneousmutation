@@ -1,0 +1,8 @@
+
+Here are the scripts I used to generate the random simulation data, I also suggest working in a new directory, the order to use them is as following:
+
+perl split.pl genome.fa
+perl note_list.pl genome.gff3 ref_CG.txt ref_CG_note.txt
+perl note_list.pl genome.gff3 ref_AT.txt ref_AT_note.txt
+perl mc.pl ref_AT_note.txt ref_CG_note.txt
+

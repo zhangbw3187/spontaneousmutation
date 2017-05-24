@@ -1,0 +1,12 @@
+Firstly I suggest you to create a work dir, and put all the scripts, genome and annotation files into it, and do all the following in that dir.
+
+After generated VCF files, copy them into a new directory (such as <vcf_dir>) under the work dir.
+Then you can use the scripts as following order.
+
+perl 00.note_all.pl genome.gff vcf_dir test00 
+perl 01.sort_into_snp_indel.pl test00 test01_snp test01_indel
+perl 02.count_SNP.pl -c 4061950 test01_snp test02_countSNP
+perl 03.dnds.pl -f genome.fa -d test01_snp -b blosum62.txt -o dnds_out.txt
+
+some other scripts I used were in others.
+
